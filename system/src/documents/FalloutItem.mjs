@@ -1,7 +1,9 @@
 export default class FalloutItem extends Item {
 
 	get currentWeaponDamage() {
-		if (this.type !== "weapon") return undefined;
+		if (this.type !== "weapon") {
+			return undefined;
+		}
 
 		let damageDice = parseInt(this.system.damage?.rating ?? 0);
 
@@ -12,7 +14,9 @@ export default class FalloutItem extends Item {
 
 		if (game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) {
 			let wearAndTear = Number(this.system.tear);
-			if (isNaN(wearAndTear)) wearAndTear = 0;
+			if (isNaN(wearAndTear)) {
+				wearAndTear = 0;
+			}
 
 			damageDice -= wearAndTear;
 		}
@@ -20,18 +24,26 @@ export default class FalloutItem extends Item {
 		return damageDice;
 	}
 
+
 	get isOwnedByCreature() {
 		return this.isOwned && this.actor.type === "creature";
 	}
 
+
 	get isWeaponBroken() {
-		if (this.type !== "weapon") return false;
-		if (!game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) return false;
+		if (this.type !== "weapon") {
+			return false;
+		}
+		if (!game.settings.get(SYSTEM_ID, "applyWearAndTearToWeaponDamage")) {
+			return false;
+		}
 
 		let damageDice = parseInt(this.system.damage?.rating ?? 0);
 
 		let wearAndTear = Number(this.system.tear);
-		if (isNaN(wearAndTear)) wearAndTear = 0;
+		if (isNaN(wearAndTear)) {
+			wearAndTear = 0;
+		}
 
 		damageDice -= wearAndTear;
 
@@ -39,7 +51,9 @@ export default class FalloutItem extends Item {
 	}
 
 	get shotsAvailable() {
-		if (!this.actor) return null;
+		if (!this.actor) {
+			return null;
+		}
 
 		if (this.type === "ammo") {
 			let shotsAvailable = (this.system.quantity - 1) * this.system.shots.max;
@@ -63,7 +77,9 @@ export default class FalloutItem extends Item {
 	async _preCreate(data, options, user) {
 		await super._preCreate(data, options, user);
 
-		if (data.img) return; // Already had an image set so we won"t change it
+		if (data.img) {
+			return;
+		} // Already had an image set so we won"t change it
 
 		const img = CONFIG.FALLOUT.DEFAULT_ICONS[data.type] ?? undefined;
 
@@ -73,7 +89,9 @@ export default class FalloutItem extends Item {
 	}
 
 	async deleteSettlementStructure() {
-		if (!this.actor) return null;
+		if (!this.actor) {
+			return null;
+		}
 
 		const directDescendants = this.actor.items.filter(
 			i => i.system.parentItem === this._id
@@ -91,12 +109,24 @@ export default class FalloutItem extends Item {
 	 */
 	getRollData() {
 		// If present, return the actor's roll data.
-		if (!this.actor) return null;
+		if (!this.actor) {
+			return null;
+		}
 		const rollData = this.actor.getRollData();
 		rollData.item = foundry.utils.deepClone(this.system);
 
 		return rollData;
 	}
+
+
+	hasWeaponQuality(quality) {
+		if (this.type !== "weapon") {
+			return false;
+		}
+
+		return this.system.damage.weaponQuality[quality].value > 0;
+	}
+
 
 	/**
 	 * Augment the basic Item data model with additional dynamic data.
@@ -107,6 +137,9 @@ export default class FalloutItem extends Item {
 		super.prepareData();
 
 		switch (this.type) {
+			case "ammo":
+				this._prepareAmmoData();
+				break;
 			case "consumable":
 				this._prepareConsumableData();
 				break;
@@ -116,7 +149,7 @@ export default class FalloutItem extends Item {
 		}
 	}
 
-	async rollAmmoQuantity(mode) {
+	async rollQuantity(mode) {
 		const formula = this.system.quantityRoll;
 
 		const roll = new Roll(formula);
@@ -150,10 +183,10 @@ export default class FalloutItem extends Item {
 				return fallout.chat.renderGeneralMessage(
 					this,
 					{
-						title: game.i18n.localize("FALLOUT.dialog.roll_ammo.title"),
-						body: game.i18n.format("FALLOUT.dialog.roll_ammo.chat.body",
+						title: game.i18n.localize("FALLOUT.dialog.roll_quantity.title"),
+						body: game.i18n.format("FALLOUT.dialog.roll_quantity.chat.body",
 							{
-								ammoName: this.name,
+								itemName: this.name,
 								quantity,
 							}
 						),
@@ -188,7 +221,7 @@ export default class FalloutItem extends Item {
 		itemData.isWeaponMod = this.type === "weapon_mod";
 
 		if (itemData.isWeaponMod) {
-			itemData.modSummary = this._sheet.getWeaponModSummary(this);
+			itemData.modSummary = await this._sheet.getWeaponModSummary(this);
 		}
 
 		itemData.name = this.name;
@@ -225,7 +258,9 @@ export default class FalloutItem extends Item {
 	}
 
 	weaponQualitiesString() {
-		if (this.type !== "weapon") return "";
+		if (this.type !== "weapon") {
+			return "";
+		}
 
 		const qualities = [];
 		for (const key in CONFIG.FALLOUT.WEAPON_QUALITIES) {
@@ -245,15 +280,36 @@ export default class FalloutItem extends Item {
 			return source;
 		}
 
-		const uuid = `Compendium.${options.pack}.${source._id}`;
+		const uuid = `Compendium.${options.pack}.Item.${source._id}`;
 
 		const art = fallout.moduleArt.map.get(uuid);
 
 		if (art?.img) {
-			if (art.img) source.img = art.img;
+			if (art.img) {
+				source.img = art.img;
+			}
 		}
 		return source;
 	}
+
+	_prepareAmmoData() {
+		if (this.system.fusionCore) {
+			// Fusion Cores provide 50 shots per charge
+			this.system.shots.max = this.system.charges.max * 50;
+
+			this.system.shots.current = Math.min(
+				this.system.shots.max,
+				this.system.shots.current
+			);
+
+			this.system.charges.current = Math.min(
+				this.system.charges.max,
+				this.system.charges.current,
+				Math.ceil(this.system.shots.current / 50)
+			);
+		}
+	}
+
 
 	_prepareConsumableData() {
 		this.system.consumeIcon = CONFIG.FALLOUT.CONSUMABLE_USE_ICONS[

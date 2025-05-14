@@ -39,7 +39,7 @@
 				},
 				"piercing_x": {
 					"rank": 1,
-					"value": true
+					"value": 1
 				},
 				"radioactive": {
 					"rank": 0,
@@ -159,7 +159,7 @@
 				},
 				"suppressed": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"surge": {
 					"rank": 0,
@@ -167,7 +167,7 @@
 				},
 				"thrown": {
 					"rank": 0,
-					"value": true
+					"value": 1
 				},
 				"two_handed": {
 					"rank": 0,
@@ -201,6 +201,7 @@
 			"max": 0,
 			"modded": false
 		},
+		"originalAmmoPerShot": 0,
 		"quantity": 1,
 		"range": "close",
 		"rarity": 2,

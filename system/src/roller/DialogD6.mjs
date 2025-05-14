@@ -11,6 +11,8 @@ export class DialogD6 extends Dialog {
 	}
 
 	activateListeners(html) {
+		const me = this;
+
 		// Check when the box is changed if actor has enough ammo
 		super.activateListeners(html);
 		// html.on('change', '.d-number', async (e, i, a) => {
@@ -22,10 +24,15 @@ export class DialogD6 extends Dialog {
 			let fireRate = html.find(".fr-number")[0]?.value;
 			let diceNum = html.find(".d-number")[0]?.value;
 
-			if (!diceNum) diceNum = this.diceNum;
+			const gatlingWeapon = me.weapon?.hasWeaponQuality("gatling") ?? false;
+			let multiplier = gatlingWeapon ? 2 : 1;
+
+			if (!diceNum) {
+				diceNum = this.diceNum;
+			}
 
 			if (fireRate && fireRate !== "0") {
-				diceNum += parseInt(fireRate);
+				diceNum += (parseInt(fireRate) * multiplier);
 			}
 
 			let additionalAmmo = 0;
@@ -38,7 +45,9 @@ export class DialogD6 extends Dialog {
 
 					additionalAmmo = await this.checkAmmo(diceNum, initDmg);
 
-					if (additionalAmmo < 0) return;
+					if (additionalAmmo < 0) {
+						return;
+					}
 				}
 			}
 
@@ -62,7 +71,9 @@ export class DialogD6 extends Dialog {
 
 			// REDUCE AMMO FOR CHARACTER AND ROBOT
 			if (game.settings.get("fallout", "automaticAmmunitionCalculation")) {
-				if (!this.actor) return;
+				if (!this.actor) {
+					return;
+				}
 
 				let _actor;
 				if (this.actor.startsWith("Actor")) {
@@ -72,7 +83,7 @@ export class DialogD6 extends Dialog {
 					_actor = fromUuidSync(this.actor).actor;
 				}
 
-				if (_actor.type === "character" || _actor.type === "robot" || _actor.type === "vehicle") {
+				if (["character", "robot", "vehicle"].includes(_actor.type)) {
 					if (additionalAmmo > 0) {
 						await _actor.reduceAmmo(this.weapon.system.ammo, additionalAmmo);
 					}
@@ -126,13 +137,21 @@ export class DialogD6 extends Dialog {
 	}
 
 	async checkAmmo(diceNum, initDmg) {
-		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) return 0;
+		if (!game.settings.get("fallout", "automaticAmmunitionCalculation")) {
+			return 0;
+		}
 
-		if (!this.actor) return 0;
+		if (!this.actor) {
+			return 0;
+		}
 
-		if (!this.weapon) return 0;
+		if (!this.weapon) {
+			return 0;
+		}
 
-		if (this.weapon.system.ammo === "") return 0;
+		if (this.weapon.system.ammo === "") {
+			return 0;
+		}
 
 		// Check if there is ammo at all
 		let _actor;
@@ -143,9 +162,13 @@ export class DialogD6 extends Dialog {
 			_actor = fromUuidSync(this.actor).actor;
 		}
 
-		if (!_actor) return 0;
+		if (!_actor) {
+			return 0;
+		}
 
-		if (_actor.type !== "character" && _actor.type !== "robot" && _actor.type !== "vehicle") return 0;
+		if (!["character", "robot", "vehicle"].includes(_actor.type)) {
+			return 0;
+		}
 
 		const [ammoItems, shotsAvailable] =
 			_actor._getAvailableAmmoType(
@@ -161,10 +184,11 @@ export class DialogD6 extends Dialog {
 		const totalDice = parseInt(diceNum);
 		const weaponDmg = parseInt(initDmg);
 
-		let additionalAmmo = Math.max(0, totalDice - weaponDmg) * this.weapon.system.ammoPerShot;
+		let additionalAmmo = Math.max(0, totalDice - weaponDmg)
+			* this.weapon.system.ammoPerShot;
 
 		// Gatling weird shit where you need to add 2DC and spend 10 ammmo...
-		if (this.weapon.system.damage.weaponQuality.gatling.value) {
+		if (this.weapon && this.weapon.hasWeaponQuality("gatling")) {
 			additionalAmmo = Math.floor(additionalAmmo * 0.5);
 		}
 

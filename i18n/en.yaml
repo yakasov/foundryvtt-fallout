@@ -45,6 +45,12 @@ FALLOUT.APP.SalvageJunk.selectedAmount: Salvaging {amount} of {max} Junk
 FALLOUT.APP.SalvageJunk.start: Start Salvaging
 FALLOUT.APP.SalvageJunk.time: This will take {time}
 FALLOUT.APP.SalvageJunk.title: Salvage Junk
+FALLOUT.APPAREL_MOD.shadowed: Shadowed
+FALLOUT.APPAREL_MOD.type.lining: Lining
+FALLOUT.APPAREL_MOD.type.material: Material
+FALLOUT.APPAREL_MOD.type.plating: Plating
+FALLOUT.APPAREL_MOD.type.system: System
+FALLOUT.APPAREL_MOD.type.upgrade: Upgrade
 FALLOUT.APPAREL.armor: Armor
 FALLOUT.APPAREL.clothing: Clothing
 FALLOUT.APPAREL.headgear: Headgear
@@ -146,12 +152,14 @@ FALLOUT.CHAT_MESSAGE.conditions.hunger_level: Hunger Level
 FALLOUT.CHAT_MESSAGE.conditions.sleep_level: Sleep Level
 FALLOUT.CHAT_MESSAGE.conditions.thirst_level: Thirst Level
 FALLOUT.CHAT_MESSAGE.consumed_dirty_water.body: "{actorName} consumed Dirty Water"
+FALLOUT.CHAT_MESSAGE.consumed.beverage.gains_cap: Gains one bottlecap
 FALLOUT.CHAT_MESSAGE.consumed.beverage.title: Beverage Consumed
 FALLOUT.CHAT_MESSAGE.consumed.body: "{actorName} consumed {itemName}"
 FALLOUT.CHAT_MESSAGE.consumed.chem.title: Chem Consumed
 FALLOUT.CHAT_MESSAGE.consumed.food.title: Food Consumed
 FALLOUT.CHAT_MESSAGE.consumed.food.warn_full: You are already full and cannot eat any more
 FALLOUT.CHAT_MESSAGE.consumed.other.title: Other Consumed
+FALLOUT.CHAT_MESSAGE.consumed.warn_none_available: You don't have any {itemName} available to consume
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.body: "{actorName} resisted the {baseRadDamage} radiation damage from consuming {itemName}"
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable_resisted.title: Radiation Resisted
 FALLOUT.CHAT_MESSAGE.radiation_from_consumable.body: "{actorName} takes {radsTaken} radiation damage from consuming {itemName}"
@@ -173,14 +181,28 @@ FALLOUT.CREATURE.guns: Guns
 FALLOUT.CREATURE.melee: Melee
 FALLOUT.CREATURE.mind: Mind
 FALLOUT.CREATURE.other: Other
-FALLOUT.dialog.roll_ammo.button.chat: Send to Chat
-FALLOUT.dialog.roll_ammo.button.create: Create New
-FALLOUT.dialog.roll_ammo.button.update: Update Item
-FALLOUT.dialog.roll_ammo.chat.body: "{ammoName} x {quantity}"
-FALLOUT.dialog.roll_ammo.chat.details: This will post the ammo roll result as a chat message.
-FALLOUT.dialog.roll_ammo.create.details: This will create a new Ammo item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
-FALLOUT.dialog.roll_ammo.title: Roll Ammunition
-FALLOUT.dialog.roll_ammo.update.details: This will update this Ammo item with a newly rolled ammo quantity.
+FALLOUT.dialog.roll_quantity.button.chat: Send to Chat
+FALLOUT.dialog.roll_quantity.button.create: Create New
+FALLOUT.dialog.roll_quantity.button.update: Update Item
+FALLOUT.dialog.roll_quantity.chat.body: "{itemName} x {quantity}"
+FALLOUT.dialog.roll_quantity.chat.details: This will post the quantity roll result as a chat message.
+FALLOUT.dialog.roll_quantity.create.details: This will create a new item with the quantity rolled. If the Item you are rolling from is owned by an Actor, the new item will be created in that Actor's inventory.
+FALLOUT.dialog.roll_quantity.title: Roll Quantity
+FALLOUT.dialog.roll_quantity.update.details: This will update this item with a newly rolled quantity.
+FALLOUT.EFFECT.StatusBleeding: Bleeding
+FALLOUT.EFFECT.StatusBlind: Blind
+FALLOUT.EFFECT.StatusBurning: Burning
+FALLOUT.EFFECT.StatusDead: Dead
+FALLOUT.EFFECT.StatusDeaf: Deaf
+FALLOUT.EFFECT.StatusDiseased: Diseased
+FALLOUT.EFFECT.StatusDrugged: Drugged
+FALLOUT.EFFECT.StatusInjured: Injured
+FALLOUT.EFFECT.StatusPoisoned: Poisoned
+FALLOUT.EFFECT.StatusProne: Prone
+FALLOUT.EFFECT.StatusRadiation: Radiation
+FALLOUT.EFFECT.StatusRestrained: Restrained
+FALLOUT.EFFECT.StatusStunned: Stunned
+FALLOUT.EFFECT.StatusUnconscious: Unconscious
 FALLOUT.EffectCreate: Create Effect
 FALLOUT.EffectDelete: Delete Effect
 FALLOUT.EffectEdit: Edit Effect
@@ -304,6 +326,8 @@ FALLOUT.SCAVENGING_LOCATION.Button.ClearResults: Clear Results
 FALLOUT.SCAVENGING_LOCATION.Button.ScavengeLocation: Scavenge Location
 FALLOUT.SCAVENGING_LOCATION.ClearResults.notify: All scavenging results have been cleared.
 FALLOUT.SCAVENGING_LOCATION.ClearResults.title: Clear Scavenging Results
+FALLOUT.SCAVENGING_LOCATION.Error.MissingItem: "Unable to locate Scavenging result item '{name}' with UUID: {itemUuid}"
+FALLOUT.SCAVENGING_LOCATION.Error.MissingTable: "Unable to locate Scavenging roll table for {category} category with UUID: {tableUuid}"
 FALLOUT.SCAVENGING_LOCATION.Warn.NoItemTableSet: No item table has been set for {category} items.
 FALLOUT.SEARCHED_DEGREE.heavily_searched: Heavily Searched (D3)
 FALLOUT.SEARCHED_DEGREE.mostly_searched: Mostly Searched (D2)
@@ -364,6 +388,7 @@ FALLOUT.SOURCE_TITLE.gm_toolkit: "Gamemaster's Toolkit"
 FALLOUT.SOURCE_TITLE.hollywood_heroes: "NPC Pack - Hollywood Heroes"
 FALLOUT.SOURCE_TITLE.map_pack_vault: "Map Pack 1 - Vault"
 FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales: "Map Pack 2 - Wasteland Locales"
+FALLOUT.SOURCE_TITLE.mariposa_military_base: "NPC Pack #4 - Mariposa Military Base"
 FALLOUT.SOURCE_TITLE.quickstart: Quickstart
 FALLOUT.SOURCE_TITLE.reillys_rangers: "NPC Pack #3 - Reilly's Rangers"
 FALLOUT.SOURCE_TITLE.rust_devils: "NPC Pack #1 - The Rust Devils"
@@ -379,7 +404,10 @@ FALLOUT.TEMPLATES.AddWeaponQualityEffect: Add Weapon Quality/Effect (Left Click)
 FALLOUT.TEMPLATES.Alcoholic: Alcoholic
 FALLOUT.TEMPLATES.AllLocations: All Locations
 FALLOUT.TEMPLATES.AMMO: AMMO
+FALLOUT.TEMPLATES.Ammo.ChargesRemaining: Charges Remaining
 FALLOUT.TEMPLATES.Ammo.Current: Shots Remaining
+FALLOUT.TEMPLATES.Ammo.FusionCore: Fusion Core
+FALLOUT.TEMPLATES.Ammo.FusionCoreShots.tooltip: Fusion Cores provide 50 shots per charge
 FALLOUT.TEMPLATES.Ammo.Max: Shots per Item
 FALLOUT.TEMPLATES.Ammo.Multishot: Multishot
 FALLOUT.TEMPLATES.Ammo.QuantityRoll: Quantity Roll
@@ -513,6 +541,7 @@ FALLOUT.TEMPLATES.Points: Points
 FALLOUT.TEMPLATES.POISON: POISON
 FALLOUT.TEMPLATES.POWER_ARMOR_HEALTH: POWER ARMOR HEALTH
 FALLOUT.TEMPLATES.Prepared: Prepared
+FALLOUT.TEMPLATES.ProvidesCap: Provides Cap
 FALLOUT.TEMPLATES.Publication: Publication
 FALLOUT.TEMPLATES.Qualities_and_Effects: Qualities & Effects
 FALLOUT.TEMPLATES.Qualities: Qualities
@@ -575,6 +604,7 @@ FALLOUT.TIME.HOURS_PLURAL: "{hours} Hours"
 FALLOUT.TIME.HOURS_SINGULAR: "{hours} Hour"
 FALLOUT.TIME.MINUTES_PLURAL: "{mins} Minutes"
 FALLOUT.TIME.MINUTES_SINGULAR: "{mins} Minute"
+FALLOUT.TOOLTIPS.Apparel.shadowed: Shadowed armor has a darker, less-reflective surface to make it harder to see the wearer in dim light or darkness.
 FALLOUT.TOOLTIPS.DamageEffect.arc: Each Effect rolled automatically hits one additional target within Close range of the primary target. Each additional target suffers half the rolled damage (rounded up). Unlike Burst, this does not cost additional ammunition.
 FALLOUT.TOOLTIPS.DamageEffect.breaking: For each Effect rolled, reduce the number of @fos[DC] a target’s cover provides by 1, permanently. If the target is not in cover, instead reduce the DR of the location struck by 1, according to the damage type of the weapon—physical damage only reduces physical DR, for example.
 FALLOUT.TOOLTIPS.DamageEffect.burst: The attack hits one additional target within Close range of the primary target for each Effect rolled. Each additional target spends 1 additional unit of ammunition from the weapon.
@@ -697,13 +727,16 @@ FALLOUT.WEAPON_MOD.summary.damageRatingOverride: Change damage to {rating} CD
 FALLOUT.WEAPON_MOD.summary.damageType: Change damage type to {damageType}
 FALLOUT.WEAPON_MOD.summary.fireRate: Fire Rate
 FALLOUT.WEAPON_MOD.summary.gain: Gain
-FALLOUT.WEAPON_MOD.summary.range: Increase range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeDecrease: Decrease range by {range} step
+FALLOUT.WEAPON_MOD.summary.rangeIncrease: Increase range by {range} step
 FALLOUT.WEAPON_MOD.summary.remove: Remove
 FALLOUT.WEAPON_MOD.type.barrel: Barrel
+FALLOUT.WEAPON_MOD.type.cannister: Cannister
 FALLOUT.WEAPON_MOD.type.capacitor: Capacitor
 FALLOUT.WEAPON_MOD.type.concentrate: Concentrate
 FALLOUT.WEAPON_MOD.type.container: Container
 FALLOUT.WEAPON_MOD.type.dish: Dish
+FALLOUT.WEAPON_MOD.type.frame: Frame
 FALLOUT.WEAPON_MOD.type.fuel: Fuel
 FALLOUT.WEAPON_MOD.type.grip: Grip
 FALLOUT.WEAPON_MOD.type.magazine: Magazine

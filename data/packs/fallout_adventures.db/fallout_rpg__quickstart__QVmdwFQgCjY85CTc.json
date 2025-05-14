@@ -109,6 +109,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -230,9 +237,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -331,6 +341,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 6,
 							"weaponQuality": {
 								"accurate": {
@@ -452,9 +469,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -553,6 +573,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -674,9 +701,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -1336,6 +1366,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -1457,9 +1494,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -1744,6 +1784,13 @@
 								"poison": false,
 								"radiation": true
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -1865,9 +1912,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -2342,6 +2392,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 1,
 							"weaponQuality": {
 								"accurate": {
@@ -2463,9 +2520,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -2521,6 +2581,7 @@
 						"hp": 4,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -3098,6 +3159,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -3219,9 +3287,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -3320,6 +3391,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -3441,9 +3519,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -3542,6 +3623,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -3663,9 +3751,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -4355,6 +4446,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -4476,9 +4574,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -4763,6 +4864,13 @@
 								"poison": false,
 								"radiation": true
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -4884,9 +4992,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -5359,6 +5470,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -5480,9 +5598,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -6702,6 +6823,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -6823,9 +6951,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 2,
 						"range": "close",
 						"rarity": 1,
@@ -6924,6 +7055,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -7045,9 +7183,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 7
+							"max": 7,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -7146,6 +7287,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -7267,9 +7415,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -7307,10 +7458,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 1,
 						"description": "<p><span class=\"fontstyle0\">Small-caliber pistol ammunition designed for double-action revolvers before the Great War. Abundant enough that it is the ammunition of choice for most makeshift firearms, and several more powerful weapons can be modified to accept a .38 cartridge, sacrificing stopping power for availability of ammunition.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10+5dc # .38 Round]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 7,
 						"quantityRoll": "10+5dc",
@@ -7375,8 +7531,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -7390,6 +7548,7 @@
 							"physical": 1,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 3
@@ -7445,8 +7604,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -7460,6 +7621,7 @@
 							"physical": 0,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 0
@@ -7515,8 +7677,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -7530,6 +7694,7 @@
 							"physical": 0,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 2
@@ -7753,6 +7918,7 @@
 						"hp": 6,
 						"irradiated": false,
 						"prepared": true,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -7803,6 +7969,7 @@
 						"hp": 4,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -8855,6 +9022,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -8976,9 +9150,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -9077,6 +9254,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -9198,9 +9382,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 6
+							"max": 6,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -9299,6 +9486,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -9420,9 +9614,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -9460,10 +9657,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 2,
 						"description": "<p><span class=\"fontstyle0\">One of the most common types of pistol round found in the wastelands, manufactured in vast quantities before the Great War to accompany the large numbers of 10mm pistols they were producing as sidearms for soldiers, and as personal defense weapons for civilians.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 8+4dc # 10mm Round]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 17,
 						"quantityRoll": "8+4dc",
@@ -9528,8 +9730,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -9543,6 +9747,7 @@
 							"physical": 0,
 							"radiation": 2
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 1
@@ -9598,8 +9803,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -9613,6 +9820,7 @@
 							"physical": 0,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 2
@@ -9659,6 +9867,7 @@
 						"hp": 3,
 						"irradiated": false,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -9710,6 +9919,7 @@
 						"hp": 4,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 2,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -9800,6 +10010,7 @@
 						"hp": 0,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -9929,6 +10140,7 @@
 						"hp": 0,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -11223,6 +11435,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -11344,9 +11563,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -11445,6 +11667,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -11566,9 +11795,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 7
+							"max": 7,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -11667,6 +11899,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -11788,9 +12027,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 1,
@@ -11828,10 +12070,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 40,
 						"description": "<p>Little more than a hollowed-out baseball filled with an improvised explosive mixture, these grenades are crude, low-tech, and easy to make, dealing a moderate amount of damage to those within the blast.</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 2,
 						"quantityRoll": "1",
@@ -11932,6 +12179,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -12053,9 +12307,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -12093,10 +12350,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 1,
 						"description": "<p><span class=\"fontstyle0\">Small-caliber pistol ammunition designed for double-action revolvers before the Great War. Abundant enough that it is the ammunition of choice for most makeshift firearms, and several more powerful weapons can be modified to accept a .38 cartridge, sacrificing stopping power for availability of ammunition.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10+5dc # .38 Round]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 16,
 						"quantityRoll": "10+5dc",
@@ -12161,8 +12423,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -12176,6 +12440,7 @@
 							"physical": 1,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 10
@@ -12231,8 +12496,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -12246,6 +12513,7 @@
 							"physical": 0,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 2
@@ -12292,6 +12560,7 @@
 						"hp": 0,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -12343,6 +12612,7 @@
 						"hp": 0,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -12394,6 +12664,7 @@
 						"hp": 6,
 						"irradiated": false,
 						"prepared": true,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -12445,6 +12716,7 @@
 						"hp": 3,
 						"irradiated": false,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 2,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -13497,6 +13769,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -13618,9 +13897,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -13721,6 +14003,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -13842,9 +14131,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 6
+							"max": 6,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 2,
@@ -13882,10 +14174,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 3,
 						"description": "<p><span class=\"fontstyle0\">A microfusion cell&mdash;or fusion cell&mdash;is a miniaturized fusion reactor used in light energy weapons. They use volatile hydrogen isotopes which undergo fusion when subjected to extreme heat and pressure, and they can explode if exposed to a significant external heat source. Difficult to refuel without the proper facilities, these cells are often simply disposed of when depleted.</span></p>\n<p><span class=\"fontstyle0\">When fusion cell ammunition is found, it is in the form of a single cell containing the number of shots generated.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 14+7dc # Fusion Cell]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": true,
 						"quantity": 1,
 						"quantityRoll": "14+7dc",
@@ -14054,8 +14351,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -14069,6 +14368,7 @@
 							"physical": 1,
 							"radiation": 2
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 4
@@ -14124,8 +14424,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -14139,6 +14441,7 @@
 							"physical": 0,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 0
@@ -14304,6 +14607,7 @@
 						"hp": 4,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -14355,6 +14659,7 @@
 						"hp": 3,
 						"irradiated": false,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 2,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -14406,6 +14711,7 @@
 						"hp": 6,
 						"irradiated": false,
 						"prepared": true,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -15419,6 +15725,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -15540,9 +15853,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -15641,6 +15957,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -15762,9 +16085,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -15863,6 +16189,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -15984,9 +16317,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 4
+							"max": 4,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 3,
@@ -16085,6 +16421,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -16206,9 +16549,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -16246,10 +16592,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 1,
 						"description": "<p><span class=\"fontstyle0\">A highly flammable chemical mixture designed to be used in a flamer. The quality of flamer fuel varies, but most tend to be a viscous substance that stays burning at a high temperature or a long duration, to make for an effective weapon.</span></p>\n<p><span class=\"fontstyle0\">When flamer fuel is found, it is in the form of a canister containing enough fuel for the number of shots generated.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 12+6dc # Flamer Fuel]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 6,
 						"quantityRoll": "12+6dc",
@@ -16365,6 +16716,7 @@
 						"hp": 0,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -16467,8 +16819,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -16482,6 +16836,7 @@
 							"physical": 0,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 0
@@ -17696,6 +18051,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -17817,9 +18179,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -17918,6 +18283,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -18039,9 +18411,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -18140,6 +18515,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -18261,9 +18643,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 1,
@@ -18364,6 +18749,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 3,
 							"weaponQuality": {
 								"accurate": {
@@ -18485,9 +18877,12 @@
 						"melee": false,
 						"mods": {
 							"current": 1,
+							"installedMods": "",
 							"list": "<p>@UUID[Compendium.fallout.weapon_mods.Item.op1VoOjGnziZ2S8V]{Standard Stock}</p>\n<p>@UUID[Compendium.fallout.weapon_mods.Item.RyggZv9PwKChzJwB]{Long}</p>",
-							"max": 7
+							"max": 7,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -18586,6 +18981,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -18707,9 +19109,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 2,
@@ -18747,10 +19152,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 1,
 						"description": "<p><span class=\"fontstyle0\">Small-caliber pistol ammunition designed for double-action revolvers before the Great War. Abundant enough that it is the ammunition of choice for most makeshift firearms, and several more powerful weapons can be modified to accept a .38 cartridge, sacrificing stopping power for availability of ammunition.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10+5dc # .38 Round]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 7,
 						"quantityRoll": "10+5dc",
@@ -18791,10 +19201,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 15,
 						"description": "<p>A small, short-handled axe, akin to a small hatchet. Less subtle than a throwing knife, a hurled tomahawk can certainly make an impression in an enemy.</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 3,
 						"quantityRoll": "1",
@@ -18858,8 +19273,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 2
+							"max": 2,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -18873,6 +19290,7 @@
 							"physical": 1,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 7
@@ -18928,8 +19346,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 2
+							"max": 2,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -18943,6 +19363,7 @@
 							"physical": 1,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 3
@@ -19028,6 +19449,7 @@
 						"hp": 6,
 						"irradiated": false,
 						"prepared": true,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -19079,6 +19501,7 @@
 						"hp": 3,
 						"irradiated": false,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -19473,6 +19896,7 @@
 						"hp": 4,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -19570,6 +19994,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -19691,9 +20122,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -20171,6 +20605,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -20292,9 +20733,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -20923,6 +21367,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -21044,9 +21495,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -21645,6 +22099,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -21766,9 +22227,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -21869,6 +22333,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -21990,9 +22461,12 @@
 						"melee": false,
 						"mods": {
 							"current": 2,
+							"installedMods": "",
 							"list": "<p>@UUID[Compendium.fallout.weapon_mods.Item.MIMSkUavfShkeY8x]{Long Barrel}</p>\n<p>@UUID[Compendium.fallout.weapon_mods.Item.op1VoOjGnziZ2S8V]{Standard Stock}</p>",
-							"max": 6
+							"max": 6,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 2,
@@ -22275,8 +22749,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -22290,6 +22766,7 @@
 							"physical": 1,
 							"radiation": 1
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 2
@@ -22516,8 +22993,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 2
+							"max": 2,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -22531,6 +23010,7 @@
 							"physical": 2,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 20
@@ -23010,6 +23490,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 4,
 							"weaponQuality": {
 								"accurate": {
@@ -23131,9 +23618,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -23189,6 +23679,7 @@
 						"hp": 4,
 						"irradiated": true,
 						"prepared": false,
+						"providesCap": false,
 						"quantity": 1,
 						"radiation": 0,
 						"radiationDamage": 1,
@@ -23767,6 +24258,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 5,
 							"weaponQuality": {
 								"accurate": {
@@ -23888,9 +24386,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "medium",
 						"rarity": 0,
@@ -23989,6 +24490,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 8,
 							"weaponQuality": {
 								"accurate": {
@@ -24110,9 +24618,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -24211,6 +24722,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 11,
 							"weaponQuality": {
 								"accurate": {
@@ -24332,9 +24850,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "long",
 						"rarity": 0,
@@ -24433,6 +24954,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 6,
 							"weaponQuality": {
 								"accurate": {
@@ -24554,9 +25082,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -24854,10 +25385,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 200,
 						"description": "<p><span class=\"fontstyle0\">Pre-War fusion cores are high-grade, long-term nuclear batteries. A single core can power a small building for a long time or provide a lot of power for something very quickly. Most suits of Power Armor accept a fusion core power source, which lasts for several hours of activity. They can also be used as the ammunition supply for a Gatling laser.</span></p>\n<p><span class=\"fontstyle0\">When discovered, a fusion core contains a number of charges equal to 10 plus the user&rsquo;s Science skill (people with more scientific knowledge can utilize the power more efficiently; the Nuclear Physicist perk also adds extra charges, see p.68). How these charges are used or depleted depends on what they&rsquo;re plugged into (see Power Armor, p.123).</span></p>\n<p><span class=\"fontstyle0\">When used as the ammunition for a Gatling laser, each charge a fusion core contains translates to 50 shots for a Gatling laser. As a Gatling weapon, the Gatling laser consumes ammunition ten times as quickly as most weapon (see </span><span class=\"fontstyle2\">Gatling</span><span class=\"fontstyle0\">, p.90).</span></p>\n<p><span class=\"fontstyle0\">The Scavenger perk cannot increase the number of fusion cores found.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 1 # Fusion Core]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 1,
 						"quantityRoll": "1",
@@ -25478,6 +26014,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 2,
 							"weaponQuality": {
 								"accurate": {
@@ -25599,9 +26142,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 0
+							"max": 0,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 0,
@@ -25694,8 +26240,10 @@
 						},
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 1
+							"max": 1,
+							"modded": false
 						},
 						"powerArmor": {
 							"frameId": "",
@@ -25709,6 +26257,7 @@
 							"physical": 0,
 							"radiation": 0
 						},
+						"shadowed": false,
 						"source": "core_rulebook",
 						"stashed": false,
 						"weight": 2
@@ -25801,6 +26350,13 @@
 								"poison": false,
 								"radiation": false
 							},
+							"originalDamageType": {
+								"energy": false,
+								"physical": false,
+								"poison": false,
+								"radiation": false
+							},
+							"originalRating": 0,
 							"rating": 6,
 							"weaponQuality": {
 								"accurate": {
@@ -25922,9 +26478,12 @@
 						"melee": false,
 						"mods": {
 							"current": 0,
+							"installedMods": "",
 							"list": "",
-							"max": 4
+							"max": 4,
+							"modded": false
 						},
+						"originalAmmoPerShot": 0,
 						"quantity": 1,
 						"range": "close",
 						"rarity": 3,
@@ -25962,10 +26521,15 @@
 					},
 					"sort": 0,
 					"system": {
+						"charges": {
+							"current": 1,
+							"max": 1
+						},
 						"cost": 5,
 						"description": "<p><span class=\"fontstyle0\">Plasma weapons draw power and fuel from a plasma cartridge, a combination of fusion cell to power the weapon, and a capsule containing a stable version of the chemical which becomes the plasma which the weapon fires.</span></p>\n<p><strong>Quantity Found:</strong> [[/r 10_5dc # Plasma Cartridge]]</p>",
 						"effect": "",
 						"favorite": false,
+						"fusionCore": false,
 						"multishot": false,
 						"quantity": 16,
 						"quantityRoll": "10+5dc",

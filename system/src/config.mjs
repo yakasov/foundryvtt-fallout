@@ -3,6 +3,8 @@ export const SYSTEM_NAME = "Fallout RPG";
 
 export const FALLOUT = {};
 
+FALLOUT.LEVEL_UP_TOOL_ENABLED = false;
+
 // Some consts used for timing purposes
 //
 FALLOUT.ONE_HOUR_IN_SECONDS = 60 * 60;
@@ -17,6 +19,14 @@ FALLOUT.DEFAULT_COMPREHENSION_DICE = 1;
 FALLOUT.DEFAULT_CONSUMABLE_RAD_DICE = 1;
 FALLOUT.DEFAULT_JUNK_SALVAGE_MINS = 10;
 FALLOUT.DEFAULT_MAX_MAGAZINE_USES = 2;
+
+FALLOUT.APPAREL_MOD_TYPES = {
+	lining: "FALLOUT.APPAREL_MOD.type.lining",
+	material: "FALLOUT.APPAREL_MOD.type.material",
+	plating: "FALLOUT.APPAREL_MOD.type.plating",
+	system: "FALLOUT.APPAREL_MOD.type.system",
+	upgrade: "FALLOUT.APPAREL_MOD.type.upgrade",
+};
 
 FALLOUT.APPAREL_TYPES = {
 	armor: "FALLOUT.APPAREL.armor",
@@ -329,6 +339,7 @@ FALLOUT.OFFICIAL_SOURCES = {
 	hollywood_heroes: "FALLOUT.SOURCE_TITLE.hollywood_heroes",
 	map_pack_vault: "FALLOUT.SOURCE_TITLE.map_pack_vault",
 	map_pack_wasteland_locales: "FALLOUT.SOURCE_TITLE.map_pack_wasteland_locales",
+	mariposa_military_base: "FALLOUT.SOURCE_TITLE.mariposa_military_base",
 	quickstart: "FALLOUT.SOURCE_TITLE.quickstart",
 	reillys_rangers: "FALLOUT.SOURCE_TITLE.reillys_rangers",
 	rust_devils: "FALLOUT.SOURCE_TITLE.rust_devils",
@@ -436,6 +447,79 @@ FALLOUT.SLEEP_BY_NUMBER = {
 	2: "FALLOUT.TEMPLATES.conditions.weary",
 	3: "FALLOUT.TEMPLATES.conditions.exhausted",
 };
+
+FALLOUT.statusEffects = [
+	{
+		id: "bleeding",
+		img: "systems/fallout/assets/icons/conditions/bleeding.svg",
+		name: "FALLOUT.EFFECT.StatusBleeding",
+	},
+	{
+		id: "blind",
+		img: "systems/fallout/assets/icons/conditions/blind.svg",
+		name: "FALLOUT.EFFECT.StatusBlind",
+	},
+	{
+		id: "burning",
+		img: "systems/fallout/assets/icons/conditions/burning.svg",
+		name: "FALLOUT.EFFECT.StatusBurning",
+	},
+	{
+		id: "dead",
+		img: "systems/fallout/assets/icons/conditions/dead.svg",
+		name: "FALLOUT.EFFECT.StatusDead",
+	},
+	{
+		id: "deaf",
+		img: "systems/fallout/assets/icons/conditions/deaf.svg",
+		name: "FALLOUT.EFFECT.StatusDeaf",
+	},
+	{
+		id: "diseased",
+		img: "systems/fallout/assets/icons/conditions/diseased.svg",
+		name: "FALLOUT.EFFECT.StatusDiseased",
+	},
+	{
+		id: "drugged",
+		img: "systems/fallout/assets/icons/conditions/drugged.svg",
+		name: "FALLOUT.EFFECT.StatusDrugged",
+	},
+	{
+		id: "injured",
+		img: "systems/fallout/assets/icons/conditions/injured.svg",
+		name: "FALLOUT.EFFECT.StatusInjured",
+	},
+	{
+		id: "poisoned",
+		img: "systems/fallout/assets/icons/conditions/poisoned.svg",
+		name: "FALLOUT.EFFECT.StatusPoisoned",
+	},
+	{
+		id: "prone",
+		img: "systems/fallout/assets/icons/conditions/prone.svg",
+		name: "FALLOUT.EFFECT.StatusProne",
+	},
+	{
+		id: "radiation",
+		img: "systems/fallout/assets/icons/conditions/radiation.svg",
+		name: "FALLOUT.EFFECT.StatusRadiation",
+	},
+	{
+		id: "restrained",
+		img: "systems/fallout/assets/icons/conditions/restrained.svg",
+		name: "FALLOUT.EFFECT.StatusRestrained",
+	},
+	{
+		id: "stunned",
+		img: "systems/fallout/assets/icons/conditions/stunned.svg",
+		name: "FALLOUT.EFFECT.StatusStunned",
+	},
+	{
+		id: "unconscious",
+		img: "systems/fallout/assets/icons/conditions/unconscious.svg",
+		name: "FALLOUT.EFFECT.StatusUnconscious",
+	},
+];
 
 FALLOUT.THIRST_BY_NUMBER = {
 	0: "FALLOUT.TEMPLATES.conditions.quenched",
@@ -622,20 +706,22 @@ FALLOUT.WEAPON_TYPES = {
 
 FALLOUT.WEAPON_MOD_TYPES = {
 	barrel:	"FALLOUT.WEAPON_MOD.type.barrel",
-	capacitor:	"FALLOUT.WEAPON_MOD.type.capacitor",
-	concentrate:	"FALLOUT.WEAPON_MOD.type.concentrate",
-	container:	"FALLOUT.WEAPON_MOD.type.container",
-	dish:	"FALLOUT.WEAPON_MOD.type.dish",
-	fuel:	"FALLOUT.WEAPON_MOD.type.fuel",
-	grip:	"FALLOUT.WEAPON_MOD.type.grip",
-	magazine:	"FALLOUT.WEAPON_MOD.type.magazine",
-	melee:	"FALLOUT.WEAPON_MOD.type.melee",
-	muzzle:	"FALLOUT.WEAPON_MOD.type.muzzle",
-	nozzle:	"FALLOUT.WEAPON_MOD.type.nozzle",
+	cannister: "FALLOUT.WEAPON_MOD.type.cannister",
+	capacitor: "FALLOUT.WEAPON_MOD.type.capacitor",
+	concentrate: "FALLOUT.WEAPON_MOD.type.concentrate",
+	container: "FALLOUT.WEAPON_MOD.type.container",
+	dish: "FALLOUT.WEAPON_MOD.type.dish",
+	frame: "FALLOUT.WEAPON_MOD.type.frame",
+	fuel: "FALLOUT.WEAPON_MOD.type.fuel",
+	grip: "FALLOUT.WEAPON_MOD.type.grip",
+	magazine: "FALLOUT.WEAPON_MOD.type.magazine",
+	melee: "FALLOUT.WEAPON_MOD.type.melee",
+	muzzle: "FALLOUT.WEAPON_MOD.type.muzzle",
+	nozzle: "FALLOUT.WEAPON_MOD.type.nozzle",
 	propellantTank: "FALLOUT.WEAPON_MOD.type.propellantTank",
-	receiver:	"FALLOUT.WEAPON_MOD.type.receiver",
-	sight:	"FALLOUT.WEAPON_MOD.type.sight",
-	stock:	"FALLOUT.WEAPON_MOD.type.stock",
+	receiver: "FALLOUT.WEAPON_MOD.type.receiver",
+	sight: "FALLOUT.WEAPON_MOD.type.sight",
+	stock: "FALLOUT.WEAPON_MOD.type.stock",
 };
 
 

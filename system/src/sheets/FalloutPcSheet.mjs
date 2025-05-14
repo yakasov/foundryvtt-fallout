@@ -207,7 +207,9 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 			const allUsed = await this.actor.consumeItem(item);
 
-			if (allUsed) li.slideUp(200, () => this.render(false));
+			if (allUsed) {
+				li.slideUp(200, () => this.render(false));
+			}
 		});
 
 		html.find("[data-action='readMagazine']").click(async ev => {
@@ -216,7 +218,9 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 			const allUsed = await this.actor.readMagazine(item);
 
-			if (allUsed) li.slideUp(200, () => this.render(false));
+			if (allUsed) {
+				li.slideUp(200, () => this.render(false));
+			}
 		});
 
 		html.find(".injury-mark").contextmenu(async ev => {
@@ -331,8 +335,12 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	_getBodyPartStatus(injuries) {
 		let maxStatus = Math.max(...injuries);
 		let newStatus = "healthy";
-		if (maxStatus === 1) newStatus = "wounded";
-		else if (maxStatus === 2) newStatus = "crippled";
+		if (maxStatus === 1) {
+			newStatus = "wounded";
+		}
+		else if (maxStatus === 2) {
+			newStatus = "crippled";
+		}
 		return newStatus;
 	}
 
@@ -357,13 +365,16 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 		context.treatedInjuriesCount = allInjuries.filter(i => i === 1).length;
 		context.openInjuriesCount = allInjuries.filter(i => i === 2).length;
 
-		context.levelUp = this.actor.system.level.currentXP
-			>= this.actor.system.level.nextLevelXP;
+		context.levelUp = CONFIG.FALLOUT.LEVEL_UP_TOOL_ENABLED
+			&& this.actor.system.level.currentXP
+				>= this.actor.system.level.nextLevelXP;
 	}
 
 
 	async _prepareRobotModDescriptions(context) {
-		if (this.actor.isNotRobot) return;
+		if (this.actor.isNotRobot) {
+			return;
+		}
 
 		context.itemsEnrichedDescriptions = {};
 
@@ -422,8 +433,12 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 	}
 
 	_onSubmit(event) {
-		if (!this.isEditable) return;
-		if (this.actor.type !== "character") return super._onSubmit(event);
+		if (!this.isEditable) {
+			return;
+		}
+		if (this.actor.type !== "character") {
+			return super._onSubmit(event);
+		}
 
 		const updateData = this._getSubmitData();
 
@@ -486,7 +501,9 @@ export default class FalloutPcSheet extends FalloutBaseActorSheet {
 
 
 	async _updateChemDoseManager() {
-		if (this.actor.isRobot) return;
+		if (this.actor.isRobot) {
+			return;
+		}
 
 		if (!this.chemDoseManager) {
 			this.chemDoseManager = new fallout.apps.FalloutChemDoses(this.actor);
